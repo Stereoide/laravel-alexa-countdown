@@ -11,12 +11,12 @@
 |
 */
 
-Develpr\AlexaApp\Http\Routing\AlexaRoute::launch('/', 'IntentController@launch');
+\Develpr\AlexaApp\Facades\AlexaRouter::launch('/', 'IntentController@launch');
 
-Develpr\AlexaApp\Http\Routing\AlexaRoute::sessionEnded('/', 'IntentController@sessionEnded');
+\Develpr\AlexaApp\Facades\AlexaRouter::sessionEnded('/', 'IntentController@sessionEnded');
 
-Develpr\AlexaApp\Http\Routing\AlexaRoute::intent('/', 'AddCountdownIntent', 'IntentController@addCountdown');
+\Develpr\AlexaApp\Facades\AlexaRouter::intent('/', 'AddCountdownIntent', 'IntentController@addCountdown');
 
-Develpr\AlexaApp\Http\Routing\AlexaRoute::intent('/', 'ListCountdownsIntent', 'IntentController@listCountdowns');
+\Develpr\AlexaApp\Facades\AlexaRouter::intent('/', 'ListCountdownsIntent', 'IntentController@listCountdowns');
 
-Develpr\AlexaApp\Http\Routing\AlexaRoute::intent('/', 'GetNextCountdownIntent', 'IntentController@getNextCountdown');
+\Develpr\AlexaApp\Facades\AlexaRouter::intent('/', 'GetNextCountdownIntent', 'IntentController@getNextCountdown');

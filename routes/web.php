@@ -11,7 +11,7 @@
 |
 */
 
-\Develpr\AlexaApp\Facades\AlexaRouter::launch('/', 'IntentController@launch');
+$app['alexa.router']->launch('/your-app-uri', 'App\Http\Controllers\IntentController@launch');
 
 \Develpr\AlexaApp\Facades\AlexaRouter::sessionEnded('/', 'IntentController@sessionEnded');
 
